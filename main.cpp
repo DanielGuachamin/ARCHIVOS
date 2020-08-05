@@ -4,7 +4,7 @@
 #include <fstream>
 
 void Ingresar_info();
-void Mostrrar_info();
+void Mostrar_info();
 int menu();
 
 using namespace std;
@@ -23,7 +23,7 @@ int main() {
       }
       case 2:
       {
-        Mostrrar_info();
+        Mostrar_info();
       break;
       }
     }
@@ -63,7 +63,7 @@ void Ingresar_info()
 
   do
   {
-    cout << "Ingrese el nombre: ";
+    cout << "\nIngrese el nombre: ";
     getline(cin, nombre, '\n');
     cout << "Ingrese el apellido: ";
     getline(cin, apellido, '\n');
@@ -79,7 +79,7 @@ void Ingresar_info()
 
   archivoPrueba.close();
 }
-void Mostrrar_info()
+void Mostrar_info()
 {
   string nombre, apellido;
   int edad;
